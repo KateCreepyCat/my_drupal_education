@@ -20,7 +20,8 @@
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/devel": "^4.1",
-        "drupal/webform": "^6.1"
+        "drupal/webform": "^6.1",
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -32,10 +33,16 @@
         "allow-plugins": {
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true
+            "drupal/core-project-message": true,
+            "wikimedia/composer-merge-plugin": true
         }
     },
     "extra": {
+        "merge-plugin": {
+            "include": [
+                "web/modules/contrib/webform/composer.libraries.json"
+            ]
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
