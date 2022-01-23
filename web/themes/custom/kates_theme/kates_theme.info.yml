@@ -1,0 +1,14 @@
+name: Kates theme
+type: theme
+description: 'A cuddly theme that offers extra fluffiness.'
+core_version_requirement: ^9
+libraries:
+  - kates_theme/global-styling
+base theme: classy
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  sidebar: 'Sidebar'
+  content: Content
+  search: 'Search'

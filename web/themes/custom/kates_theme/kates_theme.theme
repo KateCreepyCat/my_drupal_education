@@ -1,0 +1,4 @@
+<?php
+function kates_theme_preprocess_page(&$variables) {
+  $variables['site_name'] = \Drupal::config('system.site')->get('name');
+}
